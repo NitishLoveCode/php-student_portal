@@ -7,26 +7,51 @@
 
 A complete web-based examination system that allows students to register, login, take exams, and view their results.
 
-## Features
+## ✨ Features
 
-- 🛡️ Secure student registration and login system
-- 📝 Online exam interface with multiple-choice questions
-- ⏱️ Timed exam functionality
-- 📊 Instant results with score calculation
-- 📈 Performance tracking and history
-- 📱 Responsive design for all devices
+- 🛡️ **Secure Authentication**: Student registration and login system with password hashing
+- 📝 **Online Exams**: Multiple-choice question interface with timer
+- ⏱️ **Timed Tests**: Automatic submission when time expires
+- 📊 **Instant Results**: Immediate scoring with percentage calculation
+- 📈 **Performance Tracking**: View historical exam results
+- 📱 **Responsive Design**: Works on desktop, tablet, and mobile devices
 
-## Installation
+## 🚀 Getting Started
 
 ### Prerequisites
 - Web server (Apache/Nginx)
-- PHP 8.0 or higher
-- MySQL 5.7 or higher
+- PHP 8.0+
+- MySQL 5.7+
 - Composer (for dependency management)
 
-### Setup Instructions
+### Installation
 
-1. Clone the repository:
+**Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/student-exam-portal.git
    cd student-exam-portal
+
+
+student-exam-portal/
+├── assets/               # Static assets
+│   ├── css/             # Stylesheets
+│   └── js/              # JavaScript files
+├── auth/                # Authentication
+│   ├── login.php        # Login handler
+│   ├── register.php     # Registration
+│   └── logout.php       # Logout handler
+├── exams/               # Exam functionality
+│   ├── take_exam.php    # Exam interface
+│   └── submit_exam.php  # Exam submission
+├── includes/            # Core system files
+│   ├── config.php       # Configuration
+│   ├── db.php           # Database connection
+│   ├── functions.php    # Helper functions
+│   ├── header.php       # Header template
+│   └── footer.php       # Footer template
+├── results/             # Results viewing
+│   └── view_results.php # Results interface
+├── .env.example         # Environment config
+├── index.php            # Main dashboard
+└── README.md            # This file
+   

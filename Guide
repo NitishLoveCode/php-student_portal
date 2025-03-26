@@ -1,0 +1,47 @@
+How to Use This Project
+Setup Database:
+
+Create a MySQL database using the provided SQL script
+
+Update the database credentials in includes/config.php
+
+Installation:
+
+Place all files in your web server's root directory (e.g., htdocs/student-portal)
+
+Make sure your web server (Apache, Nginx) is running with PHP support
+
+Access the Portal:
+
+Open your browser and navigate to http://localhost/student-portal
+
+Register as a student and log in
+
+Take available exams and view your results
+
+Admin Setup (Optional):
+
+To create exams and questions, you would need to create an admin interface (not included in this basic version)
+
+Security Considerations
+Always use HTTPS in production
+
+Consider adding CSRF protection for forms
+
+Implement rate limiting for login attempts
+
+Regularly update your PHP version and dependencies
+
+Consider using prepared statements instead of direct SQL queries for better security
+
+This project provides a complete foundation for a student portal with authentication, exam taking, and result viewing functionality. You can extend it further by adding features like:
+
+Password reset functionality
+
+Exam time limits
+
+Question randomization
+
+Detailed result analysis
+
+Admin interface for managing exams and questions

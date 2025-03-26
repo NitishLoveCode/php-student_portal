@@ -1,0 +1,57 @@
+INSERT INTO exams (title, description, duration_minutes) VALUES
+('Mathematics Basic Test', 'Basic arithmetic and algebra questions', 30),
+('Science Knowledge Quiz', 'General science questions covering physics, chemistry and biology', 45),
+('History Challenge', 'World history questions from ancient to modern times', 60);
+
+
+
+
+INSERT INTO questions (exam_id, question_text, option_a, option_b, option_c, option_d, correct_answer) VALUES
+(1, 'What is 15 + 27?', '32', '42', '38', '45', 'B'),
+(1, 'If x + 5 = 12, what is the value of x?', '5', '7', '12', '17', 'B'),
+(1, 'What is 3/4 expressed as a decimal?', '0.25', '0.34', '0.50', '0.75', 'D'),
+(1, 'What is the area of a rectangle with length 8cm and width 5cm?', '13 cm²', '26 cm²', '40 cm²', '45 cm²', 'C'),
+(1, 'What is the square root of 144?', '11', '12', '13', '14', 'B'),
+(1, 'Solve for y: 2y - 8 = 10', '6', '9', '12', '18', 'B'),
+(1, 'What is 25% of 200?', '25', '50', '75', '100', 'B'),
+(1, 'Which of these is a prime number?', '9', '15', '21', '17', 'D'),
+(1, 'What is the next number in the sequence: 2, 4, 8, 16, ...?', '24', '32', '64', '128', 'B'),
+(1, 'What is the value of π (pi) rounded to two decimal places?', '3.12', '3.14', '3.16', '3.18', 'B');
+
+
+
+INSERT INTO questions (exam_id, question_text, option_a, option_b, option_c, option_d, correct_answer) VALUES
+(2, 'What is the chemical symbol for gold?', 'Go', 'Gd', 'Au', 'Ag', 'C'),
+(2, 'Which planet is known as the Red Planet?', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'B'),
+(2, 'What is the main gas that makes up the Earth''s atmosphere?', 'Oxygen', 'Carbon dioxide', 'Nitrogen', 'Hydrogen', 'C'),
+(2, 'What is the hardest natural substance on Earth?', 'Gold', 'Iron', 'Diamond', 'Quartz', 'C'),
+(2, 'Which of these is NOT a state of matter?', 'Solid', 'Liquid', 'Gas', 'Energy', 'D'),
+(2, 'What is the process by which plants make their own food?', 'Respiration', 'Photosynthesis', 'Transpiration', 'Digestion', 'B'),
+(2, 'Which scientist proposed the theory of relativity?', 'Isaac Newton', 'Albert Einstein', 'Galileo Galilei', 'StephINSERT INTO questions (exam_id, question_text, option_a, option_b, option_c, option_d, correct_answer) VALUES
+(3, 'In which year did World War II end?', '1943', '1945', '1947', '1950', 'B'),
+(3, 'Who was the first president of the United States?', 'Thomas Jefferson', 'John Adams', 'George Washington', 'Abraham Lincoln', 'C'),
+(3, 'Which ancient civilization built the pyramids?', 'Greeks', 'Romans', 'Egyptians', 'Persians', 'C'),
+(3, 'The Industrial Revolution began in which country?', 'France', 'Germany', 'United States', 'Great Britain', 'D'),
+(3, 'Who wrote the "Declaration of Independence"?', 'George Washington', 'Benjamin Franklin', 'Thomas Jefferson', 'John Hancock', 'C'),
+(3, 'Which empire was ruled by Genghis Khan?', 'Ottoman Empire', 'Mongol Empire', 'Roman Empire', 'British Empire', 'B'),
+(3, 'The Renaissance began in which country?', 'France', 'Germany', 'Italy', 'Spain', 'C'),
+(3, 'Who discovered America in 1492?', 'Vasco da Gama', 'Christopher Columbus', 'Ferdinand Magellan', 'James Cook', 'B'),
+(3, 'Which war was fought between the North and South regions of the United States?', 'Revolutionary War', 'Civil War', 'War of 1812', 'Mexican-American War', 'B'),
+(3, 'The Magna Carta was signed in which year?', '1066', '1215', '1492', '1776', 'B');
+
+
+en Hawking', 'B'),
+(2, 'What is the pH value of pure water?', '5', '7', '9', '12', 'B'),
+(2, 'Which blood type is known as the universal donor?', 'A', 'B', 'AB', 'O', 'D'),
+(2, 'What is the unit of electrical resistance?', 'Volt', 'Ampere', 'Ohm', 'Watt', 'C');
+
+
+
+-- Insert some sample results (assuming you have student IDs 1, 2, 3)
+INSERT INTO results (student_id, exam_id, score, total_questions, percentage) VALUES
+(1, 1, 7, 10, 70.00),
+(1, 2, 9, 10, 90.00),
+(2, 1, 5, 10, 50.00),
+(2, 3, 8, 10, 80.00),
+(3, 2, 6, 10, 60.00),
+(3, 3, 4, 10, 40.00);
